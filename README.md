@@ -1,2 +1,2 @@
-# auto-accept-collabs
-Auto Accept Collabs
+# cron-jobs
+- Auto Accept Collabs
