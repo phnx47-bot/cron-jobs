@@ -9,7 +9,7 @@ on:
 
 jobs:
   accept_collabs:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20:04
     steps:
       - name: Fetching Local Repository
         uses: actions/checkout@master
