@@ -1,19 +1,20 @@
-name: Auto Accept Collabs
+name: 📝 Auto Accept Collabs
 
 on:
   push:
     branches:
       - master
   schedule:
-    - cron: '55 */10 * * *'
+    - cron: '55 */6 * * *'
 
 jobs:
-  accept_collabs:
+  accept-collabs:
+    name: 📝 Accept Collabs
     runs-on: ubuntu-20.04
     steps:
-      - name: Fetching Local Repository
+      - name: 🚚 Checkout
         uses: actions/checkout@master
-      - name: Auto Accept Collabs
+      - name: ✏ Auto Accept Collabs
         uses: kbrashears5/github-action-auto-accept-collabs@master
         with:
-          TOKEN: ${{ secrets.ACTIONS }}
+          TOKEN: ${{ secrets.GH_TOKEN }}
