@@ -1,11 +1,8 @@
 name: 📝 Auto Accept Collabs
 
 on:
-  push:
-    branches:
-      - master
   schedule:
-    - cron: '55 */6 * * *'
+    - cron: "55 */6 * * *"
 
 jobs:
   accept-collabs:
